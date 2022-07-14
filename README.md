@@ -1,3 +1,4 @@
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Smart%20Factory&fontSize=50&animation=fadeIn&fontAlignY=38&desc=22%20IoT%20SW%20전문가%20개발%204팀&descAlignY=51&descAlign=62)
 # Smart-Factory
 
 ### 22 IoT SW 전문가 개발 4팀 공모전
@@ -31,4 +32,3 @@
 | __Platform & Library__|<img src="https://img.shields.io/badge/ROS-22314E?style=flat-square&logo=ROS&logoColor=white"/> <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=OpenCV&logoColor=white"/>|
 | __Collaboration Tools__|<img src="https://img.shields.io/badge/Google Docs-4285F4?style=flat-square&logo=Google&logoColor=white"/>  <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white"/>|
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=footer)
