@@ -20,6 +20,12 @@
 
 <br>
 
+## 개발 일지
+
+220714 황귀용 github main readme 작성
+
+<br>
+
 ## 사용 기술 
 
 | <center>분류</center> | <center>기술 스택</center> |
