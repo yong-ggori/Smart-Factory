@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Smart%20Factory&fontSize=70&animation=fadeIn&fontAlignY=38&desc=22%20IoT%20SW%20전문가%20개발%204팀&descAlignY=51&descAlign=62)
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=Smart%20Factory&fontSize=70&animation=fadeIn&fontAlignY=38&desc=22%20IoT%20SW%20전문가%20개발%204팀&descAlignY=51&descAlign=62)
 # Smart-Factory
 
 ### 22 IoT SW 전문가 개발 4팀 공모전
