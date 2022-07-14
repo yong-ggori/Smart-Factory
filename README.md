@@ -1,9 +1,9 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=Smart%20Factory&fontSize=70&animation=fadeIn&fontAlignY=38&desc=22%20IoT%20SW%20전문가%20개발%204팀&descAlignY=51&descAlign=62)
-# Smart-Factory
+<!--# Smart-Factory
 
 ### 22 IoT SW 전문가 개발 4팀 공모전
 <br>
-
+!-->
 > 스마트 팩토리 구현
 > * 매니 퓰레이터 / 카메라를 통한 양, 불량품 구분 / 터틀봇 활용하여 물품 운송 / QT를 이용한 디스플레이 화면 구성
 
