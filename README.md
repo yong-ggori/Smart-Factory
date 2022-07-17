@@ -51,7 +51,7 @@
 
 ## 개발 일지
 
-220714 황귀용 github main readme 작성
+220714 황귀용 github main readme 작성  
 220717 이지훈 제안서 ref 개발결과물의 차별성, 파급력 및 기대효과 작성
 <br>
 
