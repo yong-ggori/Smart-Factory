@@ -30,7 +30,6 @@
 
 ## 개발 일지
 
-220714 황귀용 github main readme 작성
 
 <br>
 
