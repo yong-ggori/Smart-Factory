@@ -206,3 +206,5 @@ include_directories(
 # catkin_add_nosetests(test)
 add_executable(my_navigation_goals src/my_navigation_goals.cpp)
 target_link_libraries(my_navigation_goals ${catkin_LIBRARIES})
+add_executable(iot_navigation_loop src/iot_navigation_loop.cpp)
+target_link_libraries(iot_navigation_loop ${catkin_LIBRARIES})
