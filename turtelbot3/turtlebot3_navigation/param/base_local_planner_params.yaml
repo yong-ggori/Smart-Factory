@@ -1,8 +1,10 @@
 TrajectoryPlannerROS:
 
 # Robot Configuration Parameters
+
   max_vel_x: 0.28
   min_vel_x: -0.28
+
 
   max_vel_theta:  1.0
   min_vel_theta: -1.0
@@ -20,7 +22,9 @@ TrajectoryPlannerROS:
   holonomic_robot: false
 
 # Forward Simulation Parameters
+
   sim_time: 1.0
   vx_samples: 20
   vtheta_samples: 30
+
   sim_granularity: 0.05
