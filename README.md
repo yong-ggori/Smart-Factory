@@ -6,16 +6,16 @@
 !-->
 # 스마트 팩토리 구현
 
-> 매니 퓰레이터 / 카메라를 통한 양, 불량품 구분 / 터틀봇 활용하여 물품 운송 / QT를 이용한 디스플레이 화면 구성
+> 매니 퓰레이터 / 카메라를 통한 양, 불량품 구분 / 터틀봇 활용하여 물품 운송 / Qt를 이용한 디스플레이 화면 구성
 
 --------------------------------------------------------------------------
 
 <br>
 
-# 제안서 ref
+# 차별성과 기대효과
    
 ***
-##
+
 > 지훈 part   
 ### ○ 개발결과물의 차별성
 #### 1. 다품종 소량생산에 적합한 영상처리
@@ -39,10 +39,10 @@
 
 | 이름 | 역할 |
 | ------ | ------------------------------------------------ |
-| 황귀용 |  |
-| 이지훈 |  |
-| 맹용호 |  |
-| 지수현 |  |
+| 황귀용 |팀장, GitHub관리, 매니퓰레이터 및 컨베이어 벨트 제작, 기능구현 |
+| 이지훈 |매니퓰레이터 하드웨어 제작, 터틀 봇 제작 및 기능 구현  |
+| 맹용호 |Image Processing, 카메라   |
+| 지수현 |서버 구축, Qt UI 구상  |
 
 <br>
 
@@ -51,9 +51,11 @@
 220714 황귀용 github main readme 작성  
 220717 이지훈 제안서 ref 개발결과물의 차별성, 파급력 및 기대효과 작성  
 220719 황귀용 매니퓰레이터 동작 소스 추가  
-220720 이지훈 터틀봇3 패키지 생성
-220721 지수현 Qt ui 구성, php 구축
-220721 이지훈 터틀봇3 반복 주행 코드 추가
+220720 이지훈 터틀봇3 패키지 생성  
+220721 지수현 Qt ui 구성, php 구축  
+220721 이지훈 터틀봇3 반복 주행 코드 추가  
+220722 이지훈 소켓 통신 추가, navigation 패키지 수정  
+220724 이지훈 amcl 패키지 parameter 수정  
 
 <br>
 
@@ -61,9 +63,9 @@
 
 | <center>분류</center> | <center>기술 스택</center> |
 | :-------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __언어__ |<img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=C&logoColor=white"/> <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white"/> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/> <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white"/> |
-| __IDE__ | <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=Arduino&logoColor=white"/> <img src="https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=STMicroelectronics&logoColor=white"/> <img src="https://img.shields.io/badge/Raspberry Pi-A22846?style=flat-square&logo=Raspberry Pi&logoColor=white"/> <img src="https://img.shields.io/badge/Jetson Nano-76B900?style=flat-square&logo=NVIDIA&logoColor=white"/> |
-| __서버 및 DB__|<img src="https://img.shields.io/badge/MSSQL-CC2927?style=flat-square&logo=Microsoft SQL Server&logoColor=white"/>  <img src="https://img.shields.io/badge/Apache-D22128?style=flat-square&logo=Apache&logoColor=white"/> <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=PHP&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"/>|
+| __언어__ |<img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=C&logoColor=white"/> <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white"/>|
+| __IDE__ | <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=Arduino&logoColor=white"/> <img src="https://img.shields.io/badge/Vim-019733?style=flat-square&logo=Vim&logoColor=white"/> <img src="https://img.shields.io/badge/Raspberry Pi-A22846?style=flat-square&logo=Raspberry Pi&logoColor=white"/> <img src="https://img.shields.io/badge/Jetson Nano-76B900?style=flat-square&logo=NVIDIA&logoColor=white"/> |
+| __서버 및 DB__|<img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=MariaDB&logoColor=white"/> <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=PHP&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"/>|
 | __VersionControl & CI/CD__| <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/>|
 | __OS__|<img src="https://img.shields.io/badge/Windows10-0078D6?style=flat-square&logo=Windows&logoColor=white"/> <img src="https://img.shields.io/badge/Ubuntu20.04-E95420?style=flat-square&logo=Ubuntu&logoColor=white"/>|
 | __Platform & Library__|<img src="https://img.shields.io/badge/ROS-22314E?style=flat-square&logo=ROS&logoColor=white"/> <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=OpenCV&logoColor=white"/>|
