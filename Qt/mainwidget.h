@@ -5,6 +5,7 @@
 #include <monitoring.h>
 #include <home.h>
 #include <data.h>
+#include "dbtable.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWidget; }
@@ -23,6 +24,7 @@ private:
     Monitoring* pMonitoring;
     Home* pHome;
     Data* pData;
+    DBTable* pDBTable;
 
 private slots:
     void slotChangeIndex(int);
