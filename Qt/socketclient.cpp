@@ -15,60 +15,70 @@ SocketClient::SocketClient(QWidget *parent, Qt::WindowFlags flags)
 //  slotConnectToServer(ok);
 }
 
-
 void SocketClient::slotConnectToServer(bool& ok){
     //서버 연결 요청
     QString strHostIp;
-//	tcpSocket.connectToHost(QHostAddress::LocalHost, 5000);
     strHostIp = QInputDialog::getText(this,"HostIP","Input Server IP:",QLineEdit::Normal,SERVERIP,&ok);
     if(ok)
     {
-        if(strHostIp.isEmpty())
+        if(strHostIp.isEmpty()) {
+            socketState = !socketState;
             pQTcpSocket->connectToHost(SERVERIP, SERVERPOT);
-        else
-            pQTcpSocket->connectToHost(strHostIp, SERVERPOT);
+
+        }
+        else {
+            if(strHostIp == SERVERIP){
+                socketState = !socketState;
+                pQTcpSocket->connectToHost(strHostIp, SERVERPOT);
+            }
+            else {
+                QString Str = "Unknown server";
+                qDebug() << "error : " <<Str;
+                emit sigerr(Str);
+            }
+        }
     }
 }
+
 void SocketClient::slotConnectServer()
 {
     QString Str = "["+LOGID+":"+LOGPW+"]";
     QByteArray byteStr = Str.toLocal8Bit();
     pQTcpSocket->write(byteStr);
+    QString err = pQTcpSocket->errorString();
+    socketState = pQTcpSocket->waitForConnected();
 }
 
 void SocketClient::slotClosedByServer()
 {
         pQTcpSocket->close();
+        socketState = pQTcpSocket->waitForDisconnected();
 }
 
 void SocketClient::slotSocketReadData(){
-//    QList<QString> qList;
     QString strRecvData;
     QByteArray qByteArray;
 
-        if (pQTcpSocket->bytesAvailable() > BLOCK_SIZE)
-                return;
+    if (pQTcpSocket->bytesAvailable() > BLOCK_SIZE)
+        return;
     qByteArray = pQTcpSocket->read(BLOCK_SIZE);
     strRecvData = QString::fromUtf8(qByteArray);
-//    qDebug() <<strRecvData;
     emit sigSocketRecv(strRecvData);
-//    QMessageBox::information(this,"Socket Recv",strRecvData);
 }
 
 void SocketClient::slotSocketError()
 {
-        QString Str = pQTcpSocket->errorString();
-    qDebug() << Str;
+    QString Str = pQTcpSocket->errorString();
+    qDebug() << "error : " <<Str;
+    emit sigerr(Str);
 }
-
 
 void SocketClient::slotSocketSendData(QString strSendData)
 {
     if(!strSendData.isEmpty()) {
         strSendData = strSendData+"\n";
         QByteArray bCmd = strSendData.toLocal8Bit();
-//        qDebug() << bCmd;
-        pQTcpSocket->write(bCmd);
+        //pQTcpSocket->write(bCmd);
     }
 }
 

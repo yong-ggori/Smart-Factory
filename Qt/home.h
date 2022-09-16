@@ -25,11 +25,17 @@ private:
 
 private slots:
     void slotPushButton1();
-    void slotPushButton2();
+    void slotPushButton3();
     void slotConnectToServer(bool);
+    //void slotSocketRecvUpdate(QString);
+    void slotSocketSendData(bool);
+    void slotSocketSendData(QString);
+
+    void geterr(QString);
 
 signals:
     void pushButtonSig(int);
+    void sigSocketRecv(QString);
 
 };
 #endif // HOME_H

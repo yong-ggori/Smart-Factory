@@ -2,7 +2,9 @@
 #define MONITORING_H
 
 #include <QWidget>
-#include <QPixmap>
+#include <QWebEngineView>
+#include "socketclient.h"
+#include "home.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Monitoring; }
@@ -15,14 +17,21 @@ class Monitoring : public QWidget
 public:
     explicit Monitoring(QWidget *parent = nullptr);
     ~Monitoring();
-    void imgload();
 
 private:
     Ui::Monitoring *ui;
+    QWebEngineView *pWebView;
+    Home* home;
+    SocketClient* pSocketClient;
+    void monitoring();
+
 private slots:
     void slotPushButton();
+    void slotControlData(bool);
 signals:
     void pushButtonSig(int);
+    void sigControl(bool);
+    void sigSocketSendData(QString);
 };
 
 #endif // MONITORING_H
